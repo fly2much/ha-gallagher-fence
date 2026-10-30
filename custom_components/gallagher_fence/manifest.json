@@ -1,0 +1,14 @@
+{
+  "domain": "gallagher_fence",
+  "name": "Gallagher Fence (read-only)",
+  "codeowners": [
+    "@fly2much"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/fly2much/ha-gallagher-fence",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/fly2much/ha-gallagher-fence/issues",
+  "requirements": [],
+  "version": "0.2.0"
+}

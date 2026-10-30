@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Gallagher Fence (read-only)",
+        "description": "Log in with a Gallagher account (the same login as the Gallagher Devices app).  Home Assistant only reads data and never controls the energisers.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Log in to Gallagher again",
+        "description": "The saved Gallagher login stopped working.  Enter it again.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Email or password not accepted.",
+      "cannot_connect": "Could not reach the Gallagher cloud.",
+      "no_farm": "This account has no farm."
+    },
+    "abort": {
+      "already_configured": "This farm is already set up.",
+      "reauth_successful": "Login updated."
+    }
+  },
+  "entity": {},
+  "options": {
+    "step": {
+      "init": {
+        "title": "Gallagher Fence settings",
+        "description": "How often Home Assistant checks the Gallagher cloud, and when to flag readings as out of date.  The gateways only report about hourly (and straight away when something changes), so checking more often than every few minutes gains nothing.",
+        "data": {
+          "scan_minutes": "Check every (minutes)",
+          "stale_hours": "Flag readings as out of date after (hours)"
+        }
+      }
+    }
+  }
+}
